@@ -1,3 +1,10 @@
 # microservices-react-blog
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-r71zba)
+### Installation
+
+npm create vite@latest client --template
+
+## For Posts & Comments
+
+npm init -y
+npm install cors express nodemon axios
