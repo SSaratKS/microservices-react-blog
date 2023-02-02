@@ -4,7 +4,8 @@
 
 npm create vite@latest client --template react
 
-## For Posts & Comments
+### For Posts & Comments
 
 npm init -y
+
 npm install cors express nodemon axios
