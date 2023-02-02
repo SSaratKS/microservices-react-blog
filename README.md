@@ -1,8 +1,8 @@
 # microservices-react-blog
 
-### Installation
+### Installation Vite + React using Javascript
 
-npm create vite@latest client --template
+npm create vite@latest client --template react
 
 ## For Posts & Comments
 
