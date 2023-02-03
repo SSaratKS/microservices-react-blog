@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const CommentCreate = ({ postId }) => {
-  const [content, SetContent] = useState('');
+  const [content, setContent] = useState('');
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -11,7 +11,7 @@ const CommentCreate = ({ postId }) => {
       content,
     });
 
-    SetContent('');
+    setContent('');
   };
 
   return (
