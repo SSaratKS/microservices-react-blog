@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import PostCreate from './postCreate';
+import PostList from './postList';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,6 +10,9 @@ function App() {
     <div className="App container">
       <h1> Create Post</h1>
       <PostCreate />
+      <hr />
+      <h1> Posts </h1>
+      <PostList />
     </div>
   );
 }
