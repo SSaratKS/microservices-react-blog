@@ -4,14 +4,13 @@ Projet is setup using Vite + React
 
 `npm create vite@latest client --template react`
 
-### For Each Microservices (posts/comments/query/event-bus)
+## For Microservices (posts/comments/query/event-bus)
 
 `mkdir posts`
 
 `npm init -y`
 
 `npm install cors express nodemon axios`
-
 
 ### Setting Git Bash alias 
 
