@@ -1,32 +1,34 @@
 # microservices-react-blog
 
-## Installation Vite + React using Javascript
+Projet is setup using Vite + React
 
-npm create vite@latest client --template react
+`npm create vite@latest client --template react`
 
-### For Posts & Comments
+### For Each Microservices (posts/comments/query/event-bus)
 
-npm init -y
+`mkdir posts`
 
-npm install cors express nodemon axios
+`npm init -y`
+
+`npm install cors express nodemon axios`
 
 
 ### Setting Git Bash alias 
 
 `nano ~/.bashrc`
 
-`
-cd ~
+Copy the following commands,
 
-alias cd_microreactblog_proj=" cd '.\Work Folders\Documents\GitHub\microservices-react-blog\blog\' && ls"
+`cd ~`
 
-alias cd_git_repo="cd '.\Work Folders\Documents\GitHub\' && ls"
+`alias cd_microreactblog_proj=" cd '.\Work Folders\Documents\GitHub\microservices-react-blog\blog\' && ls"`
 
-`
+`alias cd_git_repo="cd '.\Work Folders\Documents\GitHub\' && ls"`
+
 Note: CTRL + O saves a Nano file. CTRL + X exits Nano
 
 
-## Run Services
+## Install and Run Micro Services
 
 ### CLIENT 
 `cd ~ && cd_microreactblog_proj && cd client && npm install && npm run dev`
@@ -46,12 +48,12 @@ Note: CTRL + O saves a Nano file. CTRL + X exits Nano
 
 ## Find PID and PORT
 
-netstat -ano -p tcp |findstr ":400*"
+`netstat -ano -p tcp |findstr ":400*"`
 
-`
 Active Connections
 
-  Proto  Local Address          Foreign Address        State           PID
-  
-  TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       24780
-`
+`  Proto  Local Address          Foreign Address        State           PID`
+
+`  TCP    0.0.0.0:4000           0.0.0.0:0              LISTENING       24780`
+
+`kill 24780`
