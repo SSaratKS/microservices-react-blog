@@ -8,10 +8,25 @@ app.use(bodyParser.json());
 app.post('/events', async (req,res)=> {
     const event = req.body;
 
-    await axios.post('http://localhost:4000/events', event);
-    await axios.post('http://localhost:4001/events', event);
-    await axios.post('http://localhost:4002/events', event);
-    await axios.post('http://localhost:4003/events', event);
+    // POST Service
+    await axios.post('http://localhost:4000/events', event).catch((err) => {
+        console.log(err.message);
+      });
+    
+    // COMMENT Service
+    await axios.post('http://localhost:4001/events', event).catch((err) => {
+        console.log(err.message);
+      });
+
+    // Query Service   
+    await axios.post('http://localhost:4002/events', event).catch((err) => {
+        console.log(err.message);
+      });
+
+    // Moderation Service
+    await axios.post('http://localhost:4003/events', event).catch((err) => {
+        console.log(err.message);
+      });
 
     res.send({status: 'OK'});
 });
