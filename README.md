@@ -48,6 +48,8 @@ Note: CTRL + O saves a Nano file. CTRL + X exits Nano
 ### Event-Bus
 ` cd ~ && cd_microreactblog_proj && cd event-bus && npm install && npm start `
 
+### Moderation
+` cd ~ && cd_microreactblog_proj && cd moderation && npm install && npm start `
 
 ## Find PID and PORT
 
